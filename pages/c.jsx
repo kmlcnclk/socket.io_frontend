@@ -6,7 +6,7 @@ import { io } from 'socket.io-client';
 function C() {
   const [datas, setDatas] = useState([]);
   const [input, setInput] = useState([]);
-const socket = io('ws://localhost:5000');
+const socket = io('https://socket-io-backend-kc.herokuapp.com');
   useEffect(() => {
     if (socket) {
       socket.on('connect', () => {

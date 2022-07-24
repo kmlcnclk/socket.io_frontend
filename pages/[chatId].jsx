@@ -13,7 +13,7 @@ function ChatId() {
   let socketMessages;
 
   if (token != '') {
-    socketMessages = io('ws://localhost:5000', {
+    socketMessages = io('https://twitter-clone-backend-kc.herokuapp.com', {
       auth: {
         token,
       },

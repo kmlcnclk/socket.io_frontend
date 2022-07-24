@@ -16,7 +16,7 @@ export default function Home() {
 
   useEffect(() => {
     if (token != '') {
-      fetch('http://localhost:5000/chat/getChatsFromUser', {
+      fetch('https://twitter-clone-backend-kc.herokuapp.com/chat/getChatsFromUser', {
         method: 'GET',
 
         headers: {
